@@ -12,7 +12,7 @@
 <body>
 	<input type="hidden" id="id" name="id" value="${surveyId }">
 	<input type="hidden" id="surveyState" name="surveyState" value="${survey.surveyState }">
-	
+
 	<div class="creatgeSurveyStepBody">
 		<div class="creatgeSurveyStepContent bodyCenter">
 			<ul class="createSsUl">
@@ -46,7 +46,7 @@
 			</ul>
 		</div>
 	</div>
-	
+
 	<div style="">
 		<div class="main-tabs-content bodyCenter">
 			<div class="tab-content">
@@ -65,7 +65,7 @@
 		<div id="dwBodyContent" class="bodyCenter" style="border:1px solid #C1DAEC;">
 		<div id="dwBodyUser">
 			<div class="surveyCollectMiddle">
-				
+
 				<!-- <div class="surveyCollectMiddleTab">
 					<div class="scmTabLeft">
 						<div class="scmTabLeftItem"><a href="">问卷设计</a>&nbsp;&nbsp;&gt;</div>
@@ -97,7 +97,7 @@
 									<a href="" class="surveyStateBtn sbtn25 sbtn25_2">重新打开收集</a>
 								</c:when>
 							</c:choose>
-							
+
 						</div>
 					</div>
 					<div class="surveyCollectInfoDiv">
@@ -110,9 +110,9 @@
 						</span>
 					</div>
 				</div>
-				
+
 				<div class="surveyCollectMiddleContent">
-					
+
 					<div class="collect_1_content">
 					<div style="padding:0px 60px;">
 						<div style="" >
@@ -122,7 +122,6 @@
 									<!-- <span  id="clipLinkSpan"   style="display: none;font-size:16px;color:#80AA00;">复制成功</span> -->
 									</div>
 									<div class="scmcRightTopLeftNote">复制下面的问卷链接到QQ，Email等工具中直接发给被用户</div>
-									<div><span style="color: #d15985;line-height: 36px;">找不到人填问卷？加QQ群：457647860 互填互助快速完成调研</span></div>
 								</div>
 							</div>
 							<div style="clear: both;"></div>
@@ -158,16 +157,16 @@
 						</div>
 						</div>
 					</div>
-					
 
-					
+
+
 				</div>
 			</div>
-			
+
 		</div>
 		</div>
 	</div>
-	
+
 <script type="text/javascript">
 
 /*var client = new ZeroClipboard( document.getElementById("clipLink") );

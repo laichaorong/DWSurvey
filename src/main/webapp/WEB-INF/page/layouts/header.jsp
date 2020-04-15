@@ -16,7 +16,7 @@
         </shiro:guest>
 
         <shiro:user>
-            <div class="header_Item header_menu">
+            <div class="header_Item header_menu" style="padding: 0;">
                 <ul>
                         <%-- <li><a href="${ctx }/" >首页</a></li> --%>
                     <li><a href="${ctx }/design/my-survey.action" id="mysurvey">问卷</a></li>
@@ -27,7 +27,7 @@
                 </ul>
             </div>
             <div class="header_Item header_user"
-                 style="float: right;margin-top: 12px;position: relative;zoom: 1;z-index: 165;">
+                 style="float: right;margin-top: 7px;position: relative;zoom: 1;z-index: 165;">
                 <a href="#" class="clickHideUserMenu">
 						<span class="head_use_name">
 						<shiro:principal></shiro:principal>

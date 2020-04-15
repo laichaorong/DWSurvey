@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>404页面找不到，调问网－免费好用的在线调查问卷</title>
+<title>404页面找不到</title>
 <meta name="keywords" content="免费注册  KX调查问卷, KX在线调查问卷, kx免费的在线调查问卷, kx免费问卷调查, 在线问卷、测试、投票、考核社会、360测试, KX BAE版调查问卷，KX企业机构问卷调查" />
 <meta name="description" content="免费注册-KX调查问卷系统，免费好用的自助，定制问卷调查系统，可以根据您的需求来自助与定制。强大功能全面，操作简单，支持BAE环境。" />
 <link href="${ctx }/css/templatemo_style.css" rel="stylesheet" type="text/css" />
@@ -28,7 +28,7 @@
 
 <div id="body_wrapper" style="margin-bottom: 10px;">
 <div class="wrapper" style="width: 1000px;">
-				
+
    				<div id="loginContent" style="margin-top: 60px;">
    				<div class="loginContentBody">
    					<div class="loginContentLeft" style="padding:0px 50px;">
@@ -48,9 +48,11 @@
    					<!-- <div class="loginContentTool"><input type="submit"  value=" 立 即 注 册 " class="btnGreen" /></div> -->
    					<div style="clear:both;"></div>
   				</div>
-  
+
   </div>
   </div>
- <%@ include file="/WEB-INF/page/layouts/footer.jsp"%>  
+<div class="dw_footnav" style="text-align: center;padding-top: 16px;">
+ <%@ include file="/WEB-INF/page/layouts/footer.jsp"%>
+</div>
 </body>
 </html>

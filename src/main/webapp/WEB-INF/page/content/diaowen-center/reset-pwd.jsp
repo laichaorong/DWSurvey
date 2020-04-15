@@ -20,7 +20,7 @@
 		}
 	</style>
 <script type="text/javascript">
-	
+
 $(document).ready(function(){
 	var inputFormValidate=$("#input_form").validate({
 		rules:{
@@ -41,12 +41,12 @@ $(document).ready(function(){
 	});
 });
 
-	
+
 </script>
 </head>
 <body>
 	<input type="hidden" id="id" name="id" value="${survey.id }">
-	
+
 	<div style="margin-top: 15px;">
 		<div class="main-tabs-content bodyCenter">
 			<div class="tab-content">
@@ -61,16 +61,17 @@ $(document).ready(function(){
 		<div id="dwBodyContent" class="bodyCenter" style="">
 		<div class="tab-content" style="background: #D9D9D9;padding: 0px 5px;">
 				<div class="tab-content-collectTab icTab" style="text-align: left;">
-					<a href="${ctx }/ic/user!myaccount.action" class="collectTab tabItem_1 active"><span class="collectTabItemLeft">&nbsp;</span><span>我的账号</span></a>
+					<a href="${ctx }/ic/user!myaccount.action" class="collectTab tabItem_1"><span class="collectTabItemLeft">&nbsp;</span><span>我的账号</span></a>
+					<a href="${ctx}/ic/user!pwd.action" class="collectTab tabItem_1 active"><span class="collectTabItemLeft">&nbsp;</span><span>修改密码</span></a>
 				</div>
 		</div>
 		<div id="dwBodyUser">
 			<div class="surveyCollectMiddle">
-				
+
 				<div class="surveyCollectMiddleContent">
 					<div style="padding: 25px 45px;overflow: auto;padding-top: 35px;">
 
-							<div style="font-size: 18px;color: red;padding-bottom: 12px;">提醒：请一定要记住修改后的密码，不然您将无法进入调问问卷系统。</div>
+							<div style="font-size: 18px;color: red;padding-bottom: 12px;">提醒：请一定要记住修改后的密码，不然您将无法进入问卷系统。</div>
 
 							<div style="border-bottom: 1px solid #DFDFDF;padding: 5px;color: #666565;">修改密码</div>
 							<div style="padding: 5px;color:#666565; ">
@@ -97,10 +98,10 @@ $(document).ready(function(){
 							</div>
 
 					</div>
-					
+
 				</div>
 			</div>
-			
+
 		</div>
 		</div>
 	</div>

@@ -104,7 +104,7 @@ public class SysPropertyAction extends ActionSupport{
 			String footer1="<div class=\"dw_footcopy\" style=\"font-size: 16px;color: gray;\"><p style=\"margin-bottom: 6px;\">"
 	    	+"邮箱："+adminEmail+"&nbsp;&nbsp;&nbsp;电话："+adminTelephone+"&nbsp;&nbsp;&nbsp;"
 	    	+"<a href=\"/\" style=\"color: gray;font-size: 16px;\">"+icpCode+"</a></p></div>";
-			String footerPath="/WEB-INF/page/layouts/footer-1.jsp".replace("/", File.separator);
+			String footerPath="/WEB-INF/page/layouts/footer.jsp".replace("/", File.separator);
 			writeData(footerPath, footer1);
 
 			String adminInfo="<div style=\"color: gray;\"><h3 style=\"line-height: 40px;\">联系信息</h3><p style=\"line-height: 40px;\">邮箱："+adminEmail+"</p><p style=\"line-height: 40px;\">电话："+adminTelephone+"</p><p style=\"line-height: 40px;\">"+icpCode+"</p></div>";

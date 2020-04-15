@@ -1,4 +1,4 @@
-# oce-survey 调问表单问卷系统
+# oce-survey 调研问卷表单系统
 
 oce-survey是一款方便、高效、实用的调研问卷表单系统。
 

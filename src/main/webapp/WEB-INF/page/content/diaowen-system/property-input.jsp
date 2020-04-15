@@ -16,28 +16,28 @@ $(document).ready(function(){
 	currentMenu("systemset");
 
 	binduploadImg("loginBgfile","loginBgfileQueueid","loginBgfileImgPath","上传");
-	
+
 	$("#login_bg_div img").hover(function(){
 		$(this).addClass("active_img_hover");
 	},function(){
 		$(this).removeClass("active_img_hover");
 	});
-	
+
 	$("#login_bg_div img").click(function(){
 		$("#login_bg_div img").removeClass("active_img");
 		$(this).addClass("active_img");
 		$("input[name='loginBgImg']").val($(this).attr("src").replace("${ctx}",""));
 	});
-	
+
 	/* $("#useLogo_checked").change(function(){
 		return false;
 	}); */
-	
+
 	$("#login_bg_div img").removeClass("active_img");
 	$("#login_bg_div img[src='${ctx}${loginBgImg}']").addClass("active_img");
 });
 
-	
+
 </script>
 <style type="text/css">
 .ac-input-td input,.ac-input-td select{
@@ -60,20 +60,20 @@ $(document).ready(function(){
 </head>
 <body>
 	<input type="hidden" id="id" name="id" value="${survey.id }">
-	
+
 	<div style="margin-top: 15px;">
 	</div>
 	<div style="clear: both;"></div>
 	<div id="dwBody" >
 		<div id="dwBodyContent" class="bodyCenter" style="">
-		
+
 		<div id="dwBodyUser">
 			<div class="surveyCollectMiddle">
-				
+
 				<form id="inputForm" action="${ctx }/sy/system/sys-property!save.action" method="post" >
 				<div class="surveyCollectMiddleContent">
 					<div style="padding: 25px 45px;overflow: auto;padding-top: 12px;">
-							
+
 							<div style="padding: 5px;color: #666565;letter-spacing: 2px;font-size: 18px;">
 								系统设置
 							<%--&nbsp;&nbsp;|&nbsp;&nbsp;
@@ -85,10 +85,10 @@ $(document).ready(function(){
 								&nbsp;&nbsp;|&nbsp;&nbsp;
 								<a href="${ctx }/sy/user/user-admin.action" class="a-style-1" title="新用户">激活</a> --%>
 							</div>
-							
+
 							<div style="padding: 5px;color:#666565;border: 1px solid #DFDFDF;border-radius: 5px;margin-top: 15px;">
-								
-								
+
+
 								<table width="100%">
 									<tr>
 										<td valign="top" align="left" width="500">
@@ -144,26 +144,26 @@ $(document).ready(function(){
 														</div>
 													</td>
 												</tr>
-												
+
 											</table>
 										</td>
 									</tr>
 									<tr>
 										<td height="50">
 											<input type="submit" value="保存修改" class="sbtn25 sbtn25_0" style="margin-left: 125px;">
-											<input type="button" value="放弃修改" class="sbtn24 sbtn24_1" style="margin-left: 35px;">
+<%--											<input type="button" value="放弃修改" class="sbtn24 sbtn24_1" style="margin-left: 35px;">--%>
 										</td>
 										<td class="ac-input-td"> </td>
 									</tr>
 								</table>
 							</div>
-							
+
 					</div>
 				</div>
 				</form>
-				
+
 			</div>
-			
+
 		</div>
 		</div>
 	</div>

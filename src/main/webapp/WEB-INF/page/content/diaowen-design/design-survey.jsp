@@ -2576,10 +2576,7 @@
 <%@ include file="/WEB-INF/page/layouts/other.jsp" %>
 <div style="text-align: center;">
     <div class="dw_foot" style="padding-bottom: 30px;">
-        <div class="footer-copyright" style="color: gray;padding-top: 0px;font-size: 16px;">
-            Copyright © 2020
-            <a href="/" target="_blank" style="text-decoration: none;color: rgb(53, 117, 136);">OCE</a>
-        </div>
+        <%@ include file="/WEB-INF/page/layouts/footer.jsp"%>
     </div>
 </div>
 

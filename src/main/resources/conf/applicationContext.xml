@@ -9,11 +9,11 @@
            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd"
 	default-autowire="byName">
-	
+
 	<description>Spring公共配置</description>
 
 	<!-- 定义受环境影响易变的变量 -->
-	<bean class="com.key.common.utils.DiaowenProperty" init-method="diaowenInit" >
+	<bean class="com.oce.survey.common.utils.DiaowenProperty" init-method="diaowenInit" >
 		<property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
 		<property name="ignoreResourceNotFound" value="true" />
 		<property name="locations">
@@ -26,12 +26,12 @@
 
 	<!-- 使用annotation 自动注册bean,并检查@Required,@Autowired的属性已被注入 -->
 	<!-- 扫描并自动装配 -->
-	<context:component-scan base-package="com.key.dwsurvey" />
-	<context:component-scan base-package="com.key.common" />
+	<context:component-scan base-package="com.oce.survey.biz" />
+	<context:component-scan base-package="com.oce.survey.common" />
 
 	<!-- 以静态变量保存ApplicationContext -->
-	<bean class="com.key.common.utils.SpringContextHolder" lazy-init="false" />
-	
+	<bean class="com.oce.survey.common.utils.SpringContextHolder" lazy-init="false" />
+
 	<!-- 数据源配置,使用应用内的DBCP数据库连接池 -->
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
        	<property name="driverClassName" value="${jdbc.driver}" />
@@ -47,11 +47,11 @@
 		<property name="removeAbandoned" value="true" />
         <property name="removeAbandonedTimeout" value="60"/>
         <property name="logAbandoned" value="true" />
-        <property name="testOnBorrow" value="true"/> 
-   		<property name="testWhileIdle" value="true"/> 
+        <property name="testOnBorrow" value="true"/>
+   		<property name="testWhileIdle" value="true"/>
    		<property name="defaultAutoCommit" value="false" />
 	</bean>
-	
+
 
 	<!-- Hibernate配置 -->
 	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
@@ -67,23 +67,23 @@
 				<prop key="hibernate.hbm2ddl.auto">update</prop>
 			</props>
 		</property>
-		<property name="packagesToScan">	
+		<property name="packagesToScan">
 				<list>
-					<value>com.key.common.base.entity</value>
-					<value>com.key.dwsurvey.entity</value>
+					<value>com.oce.survey.common.base.entity</value>
+					<value>com.oce.survey.biz.entity</value>
 				</list>
 		</property>
 	</bean>
-	
-	
+
+
 
 	<!-- 事务管理器配置, Hibernate单数据源事务 -->
 	<bean id="defaultTransactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
 
-	<!-- 
-		quartz使用的数据源配置 
+	<!--
+		quartz使用的数据源配置
 	<bean id="quartzDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="${quartz.jdbc.driver}" />
 		<property name="url" value="${quartz.jdbc.url}" />
@@ -98,5 +98,5 @@
 
 	<!-- 使用annotation定义事务 -->
 	<tx:annotation-driven transaction-manager="defaultTransactionManager" proxy-target-class="true" />
-	
+
 </beans>

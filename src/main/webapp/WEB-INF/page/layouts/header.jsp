@@ -4,9 +4,9 @@
 <%@include file="/WEB-INF/page/layouts/other.jsp" %>
 <div id="header">
     <div id="headerCenter" class="bodyCenter">
-        <div class="header_Item header_logo">
-            <%@ include file="logo-img.jsp" %>
-        </div>
+<%--        <div class="header_Item header_logo">--%>
+<%--            <%@ include file="logo-img.jsp" %>--%>
+<%--        </div>--%>
         <shiro:guest>
             <div class="header_Item header_menu">
             </div>
@@ -22,7 +22,7 @@
                     <li><a href="${ctx }/design/my-survey.action" id="mysurvey">问卷</a></li>
                     <shiro:hasRole name="admin">
                         <li><a href="${ctx }/sy/user/user-admin.action" id="usermanager">用户</a></li>
-                        <li><a href="${ctx }/sy/system/sys-property!input.action" id="systemset">设置</a></li>
+<%--                        <li><a href="${ctx }/sy/system/sys-property!input.action" id="systemset">设置</a></li>--%>
                     </shiro:hasRole>
                 </ul>
             </div>

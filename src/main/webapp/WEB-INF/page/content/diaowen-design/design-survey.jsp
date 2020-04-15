@@ -43,10 +43,8 @@
     <div id="header">
         <div id="header_left">
             <div class="header_Item header_logo">
-                <a href="${ctx }/" style="text-decoration: none;color: #5B9FD0; margin-left: 20px;"><span style="font-size: 30px;">OCE SURVEY</span>
-					<span class="titleTempSpan" style="padding-left: 6px;color: red;">OSS</span></a>
-                &nbsp;&nbsp;
-                <span style="font-family: '微软雅黑';font-size: 16px;line-height: 46px;" id="pageHeaderSpan">在线问卷编辑器</span>
+<%--                <a href="${ctx }/" style="text-decoration: none;color: #5B9FD0; margin-left: 20px;"><span style="font-size: 30px;">OCE SURVEY</span></a>--%>
+                <span style="margin-left: 20px;font-family: '微软雅黑';font-size: 16px;line-height: 46px;" id="pageHeaderSpan">在线问卷编辑器</span>
             </div>
         </div>
         <div id="header_right">
@@ -66,9 +64,7 @@
                 </div>
                 <div class="tools_tabs_right">
                     <ul>
-                        <li style="padding: 0px;font-size: 12px;line-height: 28px;"><a
-                                href="http://www.diaowen.net/buy2.jsp" target="_black"
-                                style="text-decoration: none;color: gray;">升级到高级版</a></li>
+                        <li style="padding: 0px;font-size: 12px;line-height: 28px;"></li>
                     </ul>
                 </div>
             </div>

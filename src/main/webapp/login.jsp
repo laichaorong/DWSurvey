@@ -68,7 +68,8 @@ label.error{
 </style>
 </head>
 <body style="background-color: #537088;">
-<%@ include file="/WEB-INF/page/layouts/loginbgimg.jsp"%>
+<%--<%@ include file="/WEB-INF/page/layouts/loginbgimg.jsp"%>--%>
+<div class="m-logbg"></div>
 
 <div id="wrap" class="wrapLogin">
 

@@ -44,7 +44,6 @@
 		<div id="headerCenter"  class="bodyCenter">
 			<div class="header_Item header_logo">
 				<span style="font-size: 30px;">OCE SURVEY</span>
-				<span class="titleTempSpan">OSS</span>
 			</div>
 			<div class="header_Item header_menu">
 			<ul>

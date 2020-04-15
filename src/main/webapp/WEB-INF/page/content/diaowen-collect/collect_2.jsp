@@ -127,12 +127,12 @@
 							<div style="clear: both;"></div>
 							<div style="padding-bottom: 20px;">
 								<div style="border: 1px solid rgb(234, 231, 231);padding: 5px;">
-									<textarea id="shareSurTextarea" rows="5" cols="30" style="width: 100%;height: 160px;border: none;outline: none;resize:none;font-size: 16px;" >大家好，我刚刚通过OCE SURVEY制作了一份调查问卷“${survey.surveyName }”，需要您的帮助，您的意见非常重要。快快来吧帮忙回答。</textarea>
+									<textarea id="shareSurTextarea" rows="5" cols="30" style="width: 100%;height: 160px;border: none;outline: none;resize:none;font-size: 16px;" >大家好，我刚刚制作了一份调查问卷“${survey.surveyName }”，需要您的帮助，您的意见非常重要。快快来吧帮忙回答。</textarea>
 								</div>
 								<div style="padding: 5px;background: rgb(234, 231, 231);height: 40px;">
 									<div style="float: left;line-height: 45px;">分享到&nbsp;&nbsp;</div>
 									<div style="float: left;"><!-- Baidu Button BEGIN -->
-											<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare"  data='{"text":"大家好，我刚刚通过OCE SURVEY制作了一份调查问卷“${survey.surveyName }”，需要您的帮助，您的意见非常重要。快快来吧帮忙回答。", "url":"http://www.diaowen.net/wenjuan/${survey.sid }.html","pic":"http://www.diaowen.net/images/logo/200-200.png"}'>
+											<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare"  data='{"text":"大家好，我刚刚制作了一份调查问卷【${survey.surveyName }】，需要您的帮助，您的意见非常重要。快快来吧帮忙回答。", "url":"/${survey.sid }.html","pic":"/images/logo/200-200.png"}'>
 												<a class="bds_qzone"></a>
 												<a class="bds_tsina"></a>
 												<a class="bds_tqq"></a>
@@ -232,7 +232,8 @@ $("#shareSurTextarea").keyup(function(){
 	}else{
 		$('#wordsInfo').addClass('redColor');
 	}
-	$('#bdshare').attr('data', '{"text":"' + $(this).val() + '", "url":"http://www.diaowen.net/wenjuan/${survey.sid }.html","pic":"http://www.diaowen.net/images/logo/200-200.png"}');
+	var host = window.location.protocol + '//' +window.location.host;
+	$('#bdshare').attr('data', '{"text":"' + $(this).val() + '", "url": "' + host + '/wenjuan/${survey.sid }.html","pic":"' + host + '/images/logo/200-200.png"}');
 });
 $("#shareSurTextarea").keyup();
 

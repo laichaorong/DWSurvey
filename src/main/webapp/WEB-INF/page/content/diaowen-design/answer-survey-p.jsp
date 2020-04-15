@@ -624,12 +624,12 @@ if(errorcode=="3"){
 </script>
 <%@ include file="/WEB-INF/page/layouts/other.jsp"%>
 
-<!-- Diaowen.net Button BEGIN -->
+<!--  Button BEGIN -->
 	<div id="webSiteFixedRight" class="websiteFixed" style="position: fixed;right: 0px;top: 20px;z-index: 9999;">
 		<a id="mobileTdId" href="＃" style="background: #1C658B;width: 15px;background: #8CBCD1;display: block;padding: 5px;padding-top: 10px;padding-bottom:10px;font-weight: bold;color: white;cursor: pointer;float: right;vertical-align: middle;text-decoration: none;font-size: 12px;">手机地址</a>
 		<img alt="" src="${ctx }/survey!answerTD.action?surveyId=${survey.id}" height="130" style="padding: 10px;background: white;display: none;" />
 	</div>
-<!-- Diaowen.net Button END -->
+<!--  Button END -->
 
 </body>
 </html>
